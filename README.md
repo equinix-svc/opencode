@@ -1,3 +1,34 @@
+# OpenCode
+## TL;DR
+1. install
+```bash
+curl -fsSL https://opencode.ai/install | bash
+npm i -g opencode-ai@latest
+```
+2. config
+```bash
+vim ~/.config/opencode/opencode.json
+```
+```
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "litellm": {
+      "options": {
+        "apiKey": "sk-XXX",
+        "baseURL": "http://64.191.201.100:4000"
+      },
+      "models": {
+        "us.anthropic.claude-sonnet-4-5-20250929-v1:0": {},
+        "us.anthropic.claude-opus-4-6-v1": {}
+      }
+    }
+  },
+  "model": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "model": "us.anthropic.claude-opus-4-6-v1"
+}
+```
+
 <p align="center">
   <a href="https://opencode.ai">
     <picture>
@@ -40,6 +71,8 @@
 [![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
 
 ---
+
+
 
 ### Installation
 
